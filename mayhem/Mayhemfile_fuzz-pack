@@ -1,0 +1,6 @@
+project: savantenvs/pgbackrest
+target: fuzz-pack
+cmds:
+  - cmd: /mayhem/fuzz-pack
+    libfuzzer: true
+    timeout: 10
