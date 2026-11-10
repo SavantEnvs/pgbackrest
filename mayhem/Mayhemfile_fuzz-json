@@ -1,0 +1,10 @@
+# seed-from: https://app.mayhem.security/savantenvs/pgbackrest/fuzz-json
+project: savantenvs/pgbackrest
+target: fuzz-json-mined-80d46a0
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-json-mined-80d46a0/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-json
+    libfuzzer: true
+    timeout: 10
